@@ -1,0 +1,1030 @@
+/* ========================================
+   ADMINISTRACIÓN AUTOZONE
+======================================== */
+
+.admin-panel {
+    min-height: 100vh;
+    background: #03070c;
+    color: #ffffff;
+    padding: 40px 5%;
+}
+
+
+/* ========================================
+   CONTENEDOR PRINCIPAL
+======================================== */
+
+.admin-contenedor {
+    display: flex;
+    width: 100%;
+    max-width: 1500px;
+    min-height: 780px;
+    margin: 0 auto;
+
+    background: #050b12;
+
+    border: 1px solid rgba(0, 153, 255, 0.18);
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.45);
+}
+
+
+/* ========================================
+   BARRA LATERAL
+======================================== */
+
+.admin-sidebar {
+    width: 220px;
+
+    background: #04080e;
+
+    border-right:
+        1px solid rgba(0, 153, 255, 0.14);
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px 22px;
+}
+
+
+/* LOGO */
+
+.admin-sidebar-logo {
+    font-size: 23px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 55px;
+}
+
+.admin-sidebar-logo span {
+    color: #ffffff;
+}
+
+.admin-sidebar-logo {
+    color: #0099ff;
+}
+
+.admin-sidebar-logo::first-letter {
+    color: #ffffff;
+}
+
+
+/* TEXTO ADMINISTRACIÓN */
+
+.admin-sidebar-titulo {
+    color: #4c6680;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 18px;
+}
+
+
+/* NAVEGACIÓN */
+
+.admin-nav {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+
+.admin-nav-link {
+    position: relative;
+
+    display: block;
+
+    padding: 13px 12px;
+
+    color: #aebdcb;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    border-radius: 6px;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+
+.admin-nav-link:hover {
+    color: #ffffff;
+
+    background:
+        rgba(0, 153, 255, 0.08);
+}
+
+
+.admin-nav-link:hover::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 9px;
+    bottom: 9px;
+
+    width: 2px;
+
+    background: #0099ff;
+
+    border-radius: 2px;
+}
+
+
+/* PARTE INFERIOR */
+
+.admin-sidebar-abajo {
+    margin-top: auto;
+
+    padding-top: 20px;
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.06);
+}
+
+
+.admin-volver {
+    color: #71869a;
+
+    font-size: 13px;
+
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+
+.admin-volver:hover {
+    color: #0099ff;
+}
+
+
+/* ========================================
+   CONTENIDO
+======================================== */
+
+.admin-contenido {
+    flex: 1;
+
+    padding: 40px 45px;
+
+    background:
+        radial-gradient(
+            circle at 85% 10%,
+            rgba(0, 136, 255, 0.07),
+            transparent 30%
+        );
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.admin-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding-bottom: 28px;
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.07);
+}
+
+
+.admin-superior {
+    color: #0099ff;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin: 0 0 8px;
+}
+
+
+.admin-header h1 {
+    margin: 0;
+
+    font-size: 30px;
+
+    font-weight: 600;
+
+    letter-spacing: -0.5px;
+}
+
+
+.admin-salir {
+    color: #9aabba;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: 0.2s;
+}
+
+
+.admin-salir:hover {
+    color: #0099ff;
+}
+
+
+/* ========================================
+   VISTAS
+======================================== */
+
+.admin-vista {
+    padding-top: 38px;
+}
+
+
+.admin-bienvenida {
+    color: #8fa0b0;
+
+    font-size: 14px;
+
+    margin-bottom: 35px;
+}
+
+
+.admin-descripcion {
+    color: #8294a6;
+
+    font-size: 14px;
+
+    margin-top: -20px;
+
+    margin-bottom: 30px;
+}
+
+
+/* ========================================
+   RESUMEN
+======================================== */
+
+.admin-resumen {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.07);
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.07);
+}
+
+
+.admin-resumen-item {
+    padding: 30px;
+
+    border-right:
+        1px solid rgba(255, 255, 255, 0.07);
+}
+
+
+.admin-resumen-item:last-child {
+    border-right: none;
+}
+
+
+.admin-resumen-titulo {
+    display: block;
+
+    color: #60758a;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.8px;
+
+    margin-bottom: 12px;
+}
+
+
+.admin-resumen-item strong {
+    display: block;
+
+    color: #ffffff;
+
+    font-size: 34px;
+
+    font-weight: 500;
+
+    margin-bottom: 5px;
+}
+
+
+.admin-resumen-descripcion {
+    color: #718496;
+
+    font-size: 12px;
+}
+
+
+/* ========================================
+   INFORMACIÓN
+======================================== */
+
+.admin-informacion {
+    margin-top: 45px;
+
+    padding: 25px 0;
+
+    border-left: 2px solid #0099ff;
+
+    padding-left: 20px;
+}
+
+
+.admin-informacion-titulo {
+    color: #ffffff;
+
+    font-size: 16px;
+
+    margin-bottom: 8px;
+}
+
+
+.admin-informacion p:last-child {
+    color: #7f91a3;
+
+    font-size: 13px;
+
+    margin: 0;
+}
+
+
+/* ========================================
+   HEADER DE VISTAS
+======================================== */
+
+.admin-vista-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+
+.admin-vista-header h2 {
+    margin: 0;
+
+    font-size: 27px;
+
+    font-weight: 600;
+}
+
+
+/* ========================================
+   BOTÓN PRINCIPAL
+======================================== */
+
+.boton-admin-principal {
+    background: #008ff0;
+
+    color: #ffffff;
+
+    border: none;
+
+    border-radius: 5px;
+
+    padding: 11px 18px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+
+.boton-admin-principal:hover {
+    background: #00a2ff;
+
+    box-shadow:
+        0 5px 20px rgba(0, 153, 255, 0.18);
+}
+
+
+/* ========================================
+   TABLA
+======================================== */
+
+.admin-tabla {
+    width: 100%;
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+/* CABECERA */
+
+.admin-tabla-header {
+    display: grid;
+
+    grid-template-columns:
+        0.8fr
+        1.6fr
+        1.4fr
+        0.8fr
+        1.5fr;
+
+    align-items: center;
+
+    min-height: 48px;
+
+    color: #50677c;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.07);
+}
+
+
+/* FILAS */
+
+.admin-tabla-fila {
+    display: grid;
+
+    grid-template-columns:
+        0.8fr
+        1.6fr
+        1.4fr
+        0.8fr
+        1.5fr;
+
+    align-items: center;
+
+    min-height: 65px;
+
+    color: #aebdca;
+
+    font-size: 13px;
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.06);
+
+    transition: background 0.2s;
+}
+
+
+.admin-tabla-fila:hover {
+    background:
+        rgba(0, 153, 255, 0.035);
+}
+
+
+.admin-tabla-fila strong {
+    color: #ffffff;
+
+    font-weight: 500;
+}
+
+
+/* ========================================
+   ACCIONES
+======================================== */
+
+.admin-acciones {
+    display: flex;
+
+    gap: 8px;
+}
+
+
+.admin-acciones button {
+    background: transparent;
+
+    border:
+        1px solid rgba(0, 153, 255, 0.35);
+
+    color: #79a9ca;
+
+    border-radius: 4px;
+
+    padding: 6px 10px;
+
+    font-size: 11px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.admin-acciones button:hover {
+    color: #ffffff;
+
+    border-color: #0099ff;
+
+    background:
+        rgba(0, 153, 255, 0.08);
+}
+
+
+/* ========================================
+   ROL
+======================================== */
+
+.rol-admin {
+    color: #0099ff;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 950px) {
+
+    .admin-panel {
+        padding: 20px;
+    }
+
+
+    .admin-contenedor {
+        flex-direction: column;
+    }
+
+
+    .admin-sidebar {
+        width: auto;
+
+        border-right: none;
+
+        border-bottom:
+            1px solid rgba(0, 153, 255, 0.14);
+    }
+
+
+    .admin-sidebar-logo {
+        margin-bottom: 25px;
+    }
+
+
+    .admin-sidebar-abajo {
+        margin-top: 20px;
+    }
+
+
+    .admin-nav {
+        flex-direction: row;
+
+        flex-wrap: wrap;
+    }
+
+
+    .admin-resumen {
+        grid-template-columns: 1fr;
+    }
+
+
+    .admin-resumen-item {
+        border-right: none;
+
+        border-bottom:
+            1px solid rgba(255, 255, 255, 0.07);
+    }
+
+
+    .admin-tabla {
+        overflow-x: auto;
+    }
+
+
+    .admin-tabla-header,
+    .admin-tabla-fila {
+        min-width: 800px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .admin-contenido {
+        padding: 25px 20px;
+    }
+
+
+    .admin-header {
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+
+    .admin-header h1 {
+        font-size: 24px;
+    }
+
+
+    .admin-vista-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 18px;
+    }
+}
+
+/* ========================================
+   FORMULARIO DE PRODUCTOS
+======================================== */
+
+.admin-formulario {
+    display: none;
+
+    margin-bottom: 35px;
+
+    padding: 28px;
+
+    background: #070e16;
+
+    border: 1px solid
+        rgba(0, 153, 255, 0.18);
+
+    border-radius: 8px;
+}
+
+
+.admin-formulario.activo {
+    display: block;
+}
+
+
+/* ENCABEZADO */
+
+.admin-formulario-header {
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+
+.admin-formulario-header h3 {
+    margin: 0;
+
+    font-size: 20px;
+
+    font-weight: 500;
+}
+
+
+.boton-cerrar-admin {
+    background: transparent;
+
+    border: none;
+
+    color: #71869a;
+
+    font-size: 27px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.boton-cerrar-admin:hover {
+    color: #ffffff;
+}
+
+
+/* GRID */
+
+.admin-form-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+.admin-campo {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+.admin-campo-completo {
+    grid-column: 1 / -1;
+}
+
+
+.admin-campo label {
+    color: #8296a9;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+.admin-campo input,
+.admin-campo select,
+.admin-campo textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    background: #03080e;
+
+    border: 1px solid
+        rgba(255, 255, 255, 0.1);
+
+    border-radius: 5px;
+
+    color: #ffffff;
+
+    padding: 11px 12px;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+
+.admin-campo input:focus,
+.admin-campo select:focus,
+.admin-campo textarea:focus {
+    border-color: #0099ff;
+
+    box-shadow:
+        0 0 0 2px
+        rgba(0, 153, 255, 0.08);
+}
+
+
+.admin-campo textarea {
+    min-height: 90px;
+
+    resize: vertical;
+}
+
+
+/* ACCIONES DEL FORMULARIO */
+
+.admin-formulario-acciones {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.06);
+}
+
+
+.boton-admin-secundario {
+    background: transparent;
+
+    color: #8296a9;
+
+    border: 1px solid
+        rgba(255, 255, 255, 0.12);
+
+    border-radius: 5px;
+
+    padding: 11px 18px;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.boton-admin-secundario:hover {
+    color: #ffffff;
+
+    border-color:
+        rgba(255, 255, 255, 0.3);
+}
+
+
+/* STOCK CRÍTICO */
+
+.stock-critico {
+    color: #ffb84d !important;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+
+    .admin-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-campo-completo {
+        grid-column: auto;
+    }
+
+}
+
+/* =================================================
+   FORMULARIO DE USUARIOS - ADMIN
+================================================= */
+
+#formulario-usuario-admin {
+    margin-top: 30px;
+    padding: 25px;
+    border: 1px solid #1d3d55;
+    border-radius: 12px;
+    background: #050b12;
+    box-sizing: border-box;
+}
+
+#formulario-usuario-admin .formulario-admin-header {
+    margin-bottom: 25px;
+}
+
+#formulario-usuario-admin .formulario-admin-header h3 {
+    margin: 5px 0 0;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+#formulario-usuario-admin .formulario-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#formulario-usuario-admin .campo-admin {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+#formulario-usuario-admin .campo-admin label {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#formulario-usuario-admin .campo-admin input,
+#formulario-usuario-admin .campo-admin select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border: 1px solid #29475d;
+    border-radius: 6px;
+    background: #0b141d;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+}
+
+#formulario-usuario-admin .campo-admin input:focus,
+#formulario-usuario-admin .campo-admin select:focus {
+    border-color: #008cff;
+    box-shadow: 0 0 0 2px rgba(0, 140, 255, 0.15);
+}
+
+#formulario-usuario-admin .campo-admin input::placeholder {
+    color: #7f91a0;
+}
+
+#formulario-usuario-admin .campo-admin select {
+    cursor: pointer;
+}
+
+#formulario-usuario-admin .campo-admin-completo {
+    grid-column: 1 / -1;
+}
+
+#formulario-usuario-admin .formulario-admin-botones {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+#formulario-usuario-admin .boton-admin-principal {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 6px;
+    background: #008cff;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#formulario-usuario-admin .boton-admin-principal:hover {
+    background: #0074d4;
+}
+
+#formulario-usuario-admin .boton-admin-secundario {
+    padding: 12px 22px;
+    border: 1px solid #29475d;
+    border-radius: 6px;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#formulario-usuario-admin .boton-admin-secundario:hover {
+    background: #101d29;
+}
+
+
+/* =================================================
+   MENSAJES DE VALIDACIÓN
+================================================= */
+
+#formulario-usuario-admin .mensaje-validacion {
+    min-height: 16px;
+    font-size: 12px;
+}
+
+
+/* =================================================
+   RESPONSIVE
+================================================= */
+
+@media (max-width: 700px) {
+
+    #formulario-usuario-admin .formulario-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #formulario-usuario-admin .campo-admin-completo {
+        grid-column: auto;
+    }
+
+    #formulario-usuario-admin .formulario-admin-botones {
+        flex-direction: column;
+    }
+
+}
