@@ -1,0 +1,242 @@
+/* =========================================================
+   14. REGISTRO
+   ========================================================= */
+
+
+.registro {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background:
+        linear-gradient(
+            rgba(0, 5, 12, 0.90),
+            rgba(0, 5, 12, 0.97)
+        ),
+        url("/img/fondo.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    z-index: 400;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: 0.4s ease;
+}
+
+
+/*
+   Muestra el registro cuando se usa #registro.
+*/
+.registro.abierta {
+
+    opacity: 1;
+
+    visibility: visible;
+}
+
+
+/*
+   Caja del registro.
+*/
+.registro-contenedor {
+
+    position: relative;
+
+    width: 100%;
+
+    max-width: 450px;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    padding: 40px;
+
+    background: rgba(3, 12, 23, 0.95);
+
+    border: 1px solid rgba(0, 140, 255, 0.4);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 0 20px rgba(0, 140, 255, 0.2),
+        0 0 50px rgba(0, 140, 255, 0.1);
+
+    backdrop-filter: blur(15px);
+
+    text-align: center;
+}
+
+
+/*
+   Botón cerrar registro.
+*/
+.registro-cerrar {
+
+    position: absolute;
+
+    top: 12px;
+    right: 20px;
+
+    color: #8c9aaa;
+
+    text-decoration: none;
+
+    font-size: 32px;
+
+    transition: 0.3s;
+}
+
+
+.registro-cerrar:hover {
+
+    color: #008cff;
+
+    text-shadow:
+        0 0 10px #008cff;
+}
+
+
+/*
+   Subtítulo.
+*/
+.registro-subtitulo {
+
+    color: #9aa8b8;
+
+    font-size: 14px;
+
+    margin-bottom: 25px;
+}
+
+
+/*
+   Campos del registro.
+*/
+.campo-registro {
+
+    text-align: left;
+
+    margin-bottom: 16px;
+}
+
+
+.campo-registro label {
+
+    display: block;
+
+    color: white;
+
+    font-size: 13px;
+
+    margin-bottom: 7px;
+}
+
+
+.campo-registro input {
+
+    width: 100%;
+
+    padding: 12px 14px;
+
+    background: rgba(0, 0, 0, 0.4);
+
+    border: 1px solid #263c52;
+
+    border-radius: 8px;
+
+    color: white;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+.campo-registro input:focus {
+
+    border-color: #008cff;
+
+    box-shadow:
+        0 0 5px #008cff,
+        0 0 15px rgba(0, 140, 255, 0.3);
+}
+
+
+/*
+   Botón crear cuenta.
+*/
+.boton-registro {
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #008cff;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.boton-registro:hover {
+
+    background: #009dff;
+
+    box-shadow:
+        0 0 10px #008cff,
+        0 0 20px #008cff,
+        0 0 35px rgba(0, 140, 255, 0.7);
+}
+
+
+.ya-cuenta {
+
+    margin-top: 22px;
+
+    color: #8c9aaa;
+
+    font-size: 14px;
+}
+
+
+.ya-cuenta a {
+
+    color: #008cff;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+

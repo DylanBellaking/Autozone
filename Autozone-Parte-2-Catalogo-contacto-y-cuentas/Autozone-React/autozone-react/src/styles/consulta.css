@@ -1,0 +1,297 @@
+/* =========================================================
+   23. SOLICITAR INFORMACIÓN
+   ========================================================= */
+
+
+.consulta {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background:
+        linear-gradient(
+            rgba(0, 4, 10, 0.94),
+            rgba(0, 5, 12, 0.97)
+        );
+
+    z-index: 600;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: 0.4s ease;
+}
+
+
+.consulta.abierta {
+
+    opacity: 1;
+
+    visibility: visible;
+}
+
+
+.consulta-contenedor {
+
+    position: relative;
+
+    width: 100%;
+
+    max-width: 480px;
+
+    padding: 40px;
+
+    background:
+        rgba(3, 12, 23, 0.97);
+
+    border:
+        1px solid rgba(0, 140, 255, 0.4);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 0 20px rgba(0, 140, 255, 0.2),
+        0 0 50px rgba(0, 140, 255, 0.1);
+
+    backdrop-filter: blur(15px);
+}
+
+
+/*
+   X.
+*/
+.consulta-cerrar {
+
+    position: absolute;
+
+    top: 12px;
+    right: 20px;
+
+    color: #8c9aaa;
+
+    text-decoration: none;
+
+    font-size: 32px;
+
+    transition: 0.3s ease;
+}
+
+
+.consulta-cerrar:hover {
+
+    color: #008cff;
+
+    text-shadow:
+        0 0 10px #008cff,
+        0 0 20px #008cff;
+}
+
+
+/*
+   AUTOZONE pequeño.
+*/
+.consulta-subtitulo {
+
+    color: #008cff;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 8px;
+}
+
+
+.consulta-contenedor h2 {
+
+    color: white;
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+
+.consulta-descripcion {
+
+    color: #8c9aaa;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+
+/*
+   Vehículo seleccionado.
+*/
+.auto-consulta {
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 12px 15px;
+
+    margin-bottom: 22px;
+
+    background:
+        rgba(0, 140, 255, 0.06);
+
+    border-left:
+        3px solid #008cff;
+
+    border-radius: 5px;
+}
+
+
+.auto-consulta span {
+
+    color: #718294;
+
+    font-size: 11px;
+
+    margin-bottom: 4px;
+}
+
+
+.auto-consulta strong {
+
+    color: white;
+
+    font-size: 15px;
+}
+
+
+/*
+   Campos.
+*/
+.campo-consulta {
+
+    margin-bottom: 17px;
+}
+
+
+.campo-consulta label {
+
+    display: block;
+
+    color: white;
+
+    font-size: 13px;
+
+    margin-bottom: 7px;
+}
+
+
+.campo-consulta input,
+.campo-consulta textarea {
+
+    width: 100%;
+
+    padding: 12px 14px;
+
+    background:
+        rgba(0, 0, 0, 0.4);
+
+    border:
+        1px solid #263c52;
+
+    border-radius: 8px;
+
+    color: white;
+
+    font-family:
+        Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.3s ease;
+}
+
+
+.campo-consulta textarea {
+
+    resize: vertical;
+
+    min-height: 90px;
+}
+
+
+.campo-consulta input::placeholder,
+.campo-consulta textarea::placeholder {
+
+    color: #66788a;
+}
+
+
+.campo-consulta input:focus,
+.campo-consulta textarea:focus {
+
+    border-color: #008cff;
+
+    box-shadow:
+        0 0 5px #008cff,
+        0 0 15px rgba(0, 140, 255, 0.3);
+}
+
+
+/*
+   Botón enviar.
+*/
+.boton-enviar-consulta {
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #008cff;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+.boton-enviar-consulta:hover {
+
+    background: #009dff;
+
+    box-shadow:
+        0 0 10px #008cff,
+        0 0 20px #008cff,
+        0 0 35px rgba(0, 140, 255, 0.7);
+
+    transform: translateY(-2px);
+}
+
+

@@ -1,0 +1,531 @@
+/* =========================================================
+   9. LOGIN
+   ========================================================= */
+
+
+/*
+   Ventana completa de inicio de sesión.
+*/
+.login {
+
+    /*
+       Queda sobre toda la página.
+    */
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    /*
+       Centra el formulario.
+    */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*
+       Fondo oscuro con la misma imagen del auto.
+    */
+    background:
+        linear-gradient(
+            rgba(0, 5, 12, 0.85),
+            rgba(0, 5, 12, 0.95)
+        ),
+        url("/img/fondo.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    /*
+       Debe aparecer sobre el menú.
+    */
+    z-index: 200;
+
+    /*
+       Inicialmente invisible.
+    */
+    opacity: 0;
+
+    /*
+       No se puede ver.
+    */
+    visibility: hidden;
+
+    /*
+       Animación.
+    */
+    transition: 0.4s ease;
+}
+
+
+/*
+   Cuando la URL contiene #login,
+   la ventana se vuelve visible.
+*/
+.login.abierta {
+
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*
+   Caja del formulario.
+*/
+.login-contenedor {
+
+    position: relative;
+
+    width: 420px;
+
+    padding: 45px;
+
+    /*
+       Fondo oscuro transparente.
+    */
+    background: rgba(3, 12, 23, 0.90);
+
+    /*
+       Borde azul.
+    */
+    border: 1px solid rgba(0, 140, 255, 0.5);
+
+    border-radius: 18px;
+
+    /*
+       Brillo exterior.
+    */
+    box-shadow:
+        0 0 20px rgba(0, 140, 255, 0.2),
+        0 0 50px rgba(0, 140, 255, 0.1);
+
+    /*
+       Desenfoca lo que está detrás.
+    */
+    backdrop-filter: blur(10px);
+
+    text-align: center;
+}
+
+
+/*
+   Botón X para cerrar.
+*/
+.cerrar {
+
+    position: absolute;
+
+    top: 15px;
+    right: 22px;
+
+    color: #8c9aaa;
+
+    text-decoration: none;
+
+    font-size: 30px;
+
+    transition: 0.3s;
+}
+
+
+/*
+   Hover de X.
+*/
+.cerrar:hover {
+
+    color: #008cff;
+
+    text-shadow:
+        0 0 10px #008cff,
+        0 0 20px #008cff;
+}
+
+
+/*
+   Logo dentro del login.
+*/
+.login-logo {
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    margin-bottom: 25px;
+}
+
+
+.login-logo span {
+
+    color: white;
+}
+
+
+.login-logo strong {
+
+    color: #008cff;
+}
+
+
+/*
+   Título del login.
+*/
+.login-contenedor h2 {
+
+    font-size: 30px;
+
+    color: white;
+
+    margin-bottom: 8px;
+}
+
+
+/*
+   Texto debajo del título.
+*/
+.login-subtitulo {
+
+    color: #9aa8b8;
+
+    font-size: 15px;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================================
+   10. CAMPOS DEL LOGIN
+   ========================================================= */
+
+
+/*
+   Contenedor de cada campo.
+*/
+.campo {
+
+    text-align: left;
+
+    margin-bottom: 20px;
+}
+
+
+/*
+   Etiqueta.
+*/
+.campo label {
+
+    display: block;
+
+    color: white;
+
+    font-size: 14px;
+
+    margin-bottom: 8px;
+}
+
+
+/*
+   Inputs del login.
+*/
+.campo input {
+
+    width: 100%;
+
+    padding: 13px 15px;
+
+    background: rgba(0, 0, 0, 0.4);
+
+    border: 1px solid #263c52;
+
+    border-radius: 8px;
+
+    color: white;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+/*
+   Input seleccionado.
+*/
+.campo input:focus {
+
+    border-color: #008cff;
+
+    box-shadow:
+        0 0 5px #008cff,
+        0 0 15px rgba(0, 140, 255, 0.4);
+}
+
+
+/*
+   Texto placeholder.
+*/
+.campo input::placeholder {
+
+    color: #66788a;
+}
+
+
+/* =========================================================
+   11. RECORDAR / RECUPERAR CONTRASEÑA
+   ========================================================= */
+
+
+.recordar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+
+    font-size: 13px;
+}
+
+
+.recordar label {
+
+    color: #aab6c2;
+}
+
+
+/*
+   Color azul del checkbox.
+*/
+.recordar input {
+
+    accent-color: #008cff;
+}
+
+
+/*
+   Enlace "Olvidaste tu contraseña".
+*/
+.recordar a {
+
+    color: #008cff;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+
+.recordar a:hover {
+
+    color: white;
+
+    text-shadow:
+        0 0 8px #008cff;
+}
+
+
+/* =========================================================
+   12. BOTÓN DE LOGIN
+   ========================================================= */
+
+
+.boton-login {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #008cff;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.boton-login:hover {
+
+    background: #009dff;
+
+    box-shadow:
+        0 0 10px #008cff,
+        0 0 20px #008cff,
+        0 0 40px rgba(0, 140, 255, 0.8);
+
+    transform: translateY(-2px);
+}
+
+
+/*
+   Texto de registro.
+*/
+.registrarse {
+
+    margin-top: 25px;
+
+    color: #8c9aaa;
+
+    font-size: 14px;
+}
+
+
+.registrarse a {
+
+    color: #008cff;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.registrarse a:hover {
+
+    color: white;
+
+    text-shadow:
+        0 0 10px #008cff;
+}
+
+
+/* =========================================================
+   13. RECUPERAR CONTRASEÑA
+   ========================================================= */
+
+
+.recuperar {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 5, 12, 0.88),
+            rgba(0, 5, 12, 0.96)
+        ),
+        url("/img/fondo.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    z-index: 300;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: 0.4s ease;
+}
+
+
+/*
+   Hace visible recuperación cuando
+   la URL tiene #recuperar.
+*/
+.recuperar.abierta {
+
+    opacity: 1;
+
+    visibility: visible;
+}
+
+
+/*
+   Caja de recuperación.
+*/
+.recuperar-contenedor {
+
+    position: relative;
+
+    width: 420px;
+
+    padding: 45px;
+
+    background: rgba(3, 12, 23, 0.92);
+
+    border: 1px solid rgba(0, 140, 255, 0.5);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 0 20px rgba(0, 140, 255, 0.2),
+        0 0 50px rgba(0, 140, 255, 0.1);
+
+    backdrop-filter: blur(10px);
+
+    text-align: center;
+}
+
+
+/*
+   Texto descriptivo.
+*/
+.recuperar-texto {
+
+    color: #9aa8b8;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin-bottom: 28px;
+}
+
+
+/*
+   Enlace volver al login.
+*/
+.volver-login {
+
+    margin-top: 25px;
+}
+
+
+.volver-login a {
+
+    color: #008cff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+
+.volver-login a:hover {
+
+    color: white;
+
+    text-shadow:
+        0 0 8px #008cff,
+        0 0 15px #008cff;
+}

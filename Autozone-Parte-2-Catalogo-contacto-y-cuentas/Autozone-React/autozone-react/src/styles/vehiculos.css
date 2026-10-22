@@ -1,0 +1,714 @@
+/* =========================================================
+   15. SECCIÓN VEHÍCULOS
+   ========================================================= */
+
+
+.vehiculos {
+
+    /*
+       Espacio superior e inferior.
+    */
+    padding: 130px 7% 100px;
+
+    /*
+       Fondo oscuro.
+    */
+    background:
+        linear-gradient(
+            rgba(2, 7, 13, 0.97),
+            rgba(3, 12, 23, 0.98)
+        );
+}
+
+
+/*
+   Título de vehículos.
+*/
+.vehiculos-titulo {
+
+    text-align: center;
+
+    margin-bottom: 55px;
+}
+
+
+.vehiculos-titulo p {
+
+    color: #008cff;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+}
+
+
+.vehiculos-titulo h2 {
+
+    color: white;
+
+    font-size: 42px;
+
+    margin-bottom: 12px;
+}
+
+
+.vehiculos-titulo span {
+
+    color: #8c9aaa;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   16. GRID DE VEHÍCULOS
+   ========================================================= */
+
+
+.vehiculos-grid {
+
+    /*
+       Grid permite organizar las tarjetas.
+    */
+    display: grid;
+
+    /*
+       Cuatro columnas.
+    */
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    /*
+       Separación.
+    */
+    gap: 25px;
+
+    /*
+       Ancho máximo.
+    */
+    max-width: 1400px;
+
+    /*
+       Centra el grid.
+    */
+    margin: auto;
+}
+
+
+/*
+   Tarjeta individual.
+*/
+.tarjeta-auto {
+
+    display: block;
+
+    color: white;
+
+    text-decoration: none;
+
+    background: rgba(8, 18, 30, 0.95);
+
+    border: 1px solid rgba(0, 140, 255, 0.15);
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    transition: 0.3s ease;
+}
+
+
+/*
+   Efecto hover de tarjeta.
+*/
+.tarjeta-auto:hover {
+
+    transform: translateY(-8px);
+
+    border-color: rgba(0, 140, 255, 0.5);
+
+    box-shadow:
+        0 10px 35px rgba(0, 140, 255, 0.15);
+}
+
+
+/* =========================================================
+   17. IMAGEN DEL VEHÍCULO
+   ========================================================= */
+
+
+.imagen-auto {
+
+    position: relative;
+
+    height: 230px;
+
+    overflow: hidden;
+
+    background: #02070d;
+}
+
+
+.imagen-auto img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s ease;
+}
+
+
+/*
+   Zoom de imagen al pasar el mouse.
+*/
+.tarjeta-auto:hover .imagen-auto img {
+
+    transform: scale(1.06);
+}
+
+
+/*
+   Etiqueta "Disponible".
+*/
+.etiqueta {
+
+    position: absolute;
+
+    top: 15px;
+
+    right: 15px;
+
+    padding: 6px 12px;
+
+    background: rgba(0, 140, 255, 0.9);
+
+    color: white;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    border-radius: 20px;
+}
+
+
+/* =========================================================
+   18. INFORMACIÓN DEL VEHÍCULO
+   ========================================================= */
+
+
+.info-auto {
+
+    padding: 25px;
+}
+
+
+.marca-auto {
+
+    color: #008cff;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 5px;
+}
+
+
+.info-auto h3 {
+
+    font-size: 26px;
+
+    margin-bottom: 18px;
+}
+
+
+/*
+   Características.
+*/
+.detalles-auto {
+
+    display: flex;
+
+    gap: 8px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 20px;
+}
+
+
+.detalles-auto span {
+
+    padding: 6px 9px;
+
+    background: rgba(255, 255, 255, 0.04);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 5px;
+
+    color: #9aa8b8;
+
+    font-size: 11px;
+}
+
+
+/*
+   Precio.
+*/
+.precio-auto {
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 20px;
+}
+
+
+.precio-auto span {
+
+    color: #718294;
+
+    font-size: 11px;
+}
+
+
+.precio-auto strong {
+
+    color: white;
+
+    font-size: 22px;
+}
+
+
+/*
+   Botón interno de la tarjeta.
+*/
+.boton-auto {
+
+    width: 100%;
+
+    padding: 11px;
+
+    text-align: center;
+
+    border: 1px solid #008cff;
+
+    border-radius: 25px;
+
+    color: #008cff;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.tarjeta-auto:hover .boton-auto {
+
+    background: #008cff;
+
+    color: white;
+
+    box-shadow:
+        0 0 15px rgba(0, 140, 255, 0.5);
+}
+
+
+/* =========================================================
+   19. DETALLE DEL VEHÍCULO
+   ========================================================= */
+
+
+.detalle-auto {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+
+    background:
+        linear-gradient(
+            rgba(0, 4, 10, 0.94),
+            rgba(0, 5, 12, 0.97)
+        );
+
+    z-index: 500;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: 0.4s ease;
+}
+
+
+/*
+   Cuando se selecciona #bmw, #audi,
+   #mercedes o #toyota, aparece el detalle.
+*/
+.detalle-auto.abierta {
+
+    opacity: 1;
+
+    visibility: visible;
+}
+
+
+/*
+   Contenedor del detalle.
+*/
+.detalle-contenedor {
+
+    position: relative;
+
+    width: 100%;
+
+    max-width: 1050px;
+
+    display: grid;
+
+    grid-template-columns:
+        1.1fr 0.9fr;
+
+    background: rgba(3, 12, 23, 0.96);
+
+    border: 1px solid rgba(0, 140, 255, 0.4);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 0 25px rgba(0, 140, 255, 0.2),
+        0 0 60px rgba(0, 140, 255, 0.1);
+
+    backdrop-filter: blur(15px);
+}
+
+
+/*
+   Botón cerrar.
+*/
+.detalle-cerrar {
+
+    position: absolute;
+
+    top: 15px;
+    right: 22px;
+
+    z-index: 10;
+
+    color: #9aa8b8;
+
+    text-decoration: none;
+
+    font-size: 35px;
+
+    transition: 0.3s ease;
+}
+
+
+.detalle-cerrar:hover {
+
+    color: #008cff;
+
+    text-shadow:
+        0 0 10px #008cff,
+        0 0 20px #008cff;
+}
+
+
+/*
+   Imagen grande.
+*/
+.detalle-imagen {
+
+    height: 560px;
+
+    overflow: hidden;
+
+    background: #02070d;
+}
+
+
+.detalle-imagen img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s ease;
+}
+
+
+/*
+   Información.
+*/
+.detalle-informacion {
+
+    padding: 55px 45px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.detalle-marca {
+
+    color: #008cff;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 8px;
+}
+
+
+.detalle-informacion h2 {
+
+    font-size: 42px;
+
+    margin-bottom: 20px;
+
+    color: white;
+}
+
+
+.detalle-descripcion {
+
+    color: #8c9aaa;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================================
+   20. ESPECIFICACIONES
+   ========================================================= */
+
+
+.especificaciones {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 12px;
+
+    margin-bottom: 30px;
+}
+
+
+.especificaciones div {
+
+    padding: 14px;
+
+    background:
+        rgba(255, 255, 255, 0.03);
+
+    border:
+        1px solid rgba(0, 140, 255, 0.15);
+
+    border-radius: 8px;
+}
+
+
+.especificaciones span {
+
+    display: block;
+
+    color: #718294;
+
+    font-size: 11px;
+
+    margin-bottom: 5px;
+}
+
+
+.especificaciones strong {
+
+    color: white;
+
+    font-size: 13px;
+}
+
+
+/*
+   Precio dentro del detalle.
+*/
+.detalle-precio {
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 25px;
+}
+
+
+.detalle-precio span {
+
+    color: #718294;
+
+    font-size: 12px;
+}
+
+
+.detalle-precio strong {
+
+    color: white;
+
+    font-size: 28px;
+}
+
+
+/* =========================================================
+   21. BOTÓN SOLICITAR INFORMACIÓN
+   ========================================================= */
+
+
+.boton-consultar {
+
+    display: block;
+
+    width: 100%;
+
+    padding: 14px 35px;
+
+    background: #008cff;
+
+    color: white;
+
+    text-decoration: none !important;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+.boton-consultar:hover {
+
+    background: #009dff;
+
+    color: white;
+
+    text-decoration: none !important;
+
+    box-shadow:
+        0 0 10px #008cff,
+        0 0 20px #008cff,
+        0 0 40px rgba(0, 140, 255, 0.7);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   22. BOTONES DE COMPRA
+   ========================================================= */
+
+
+.botones-compra {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+/*
+   Botón comprar.
+*/
+.boton-comprar {
+
+    display: block;
+
+    width: 100%;
+
+    padding: 14px 35px;
+
+    background: transparent;
+
+    color: #008cff;
+
+    border: 1px solid #008cff;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+.boton-comprar:hover {
+
+    background: #008cff;
+
+    color: white;
+
+    box-shadow:
+        0 0 10px #008cff,
+        0 0 20px #008cff,
+        0 0 35px rgba(0, 140, 255, 0.7);
+
+    transform: translateY(-2px);
+}
+
+
