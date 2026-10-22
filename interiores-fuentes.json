@@ -1,0 +1,65 @@
+[
+  {
+    "vehicle": "audi",
+    "color": "marron",
+    "url": "https://ymimg1.b8cdn.com/resized/article/16698/pictures/13700866/listing_main_16.jpg",
+    "source": "https://www.yallamotor.com/news/2025-audi-a4%3A-features%2C-pricing%2C-and-availability-at-yallamotor-16698",
+    "file": "public/img/audi/interior-marron.jpg"
+  },
+  {
+    "vehicle": "audi",
+    "color": "beige",
+    "url": "https://www.dubicars.com/images/ad6b3c/w_1300x760/rma-motors/9c501b33-93c5-47e4-ad6e-020bbbeda51f.jpeg",
+    "source": "https://www.dubicars.com/2024-audi-a4-35-tfsi-s-line-20l-881777.html",
+    "file": "public/img/audi/interior-beige.jpg"
+  },
+  {
+    "vehicle": "audi",
+    "color": "negro",
+    "url": "https://ymimg1.b8cdn.com/resized/car_model/10890/pictures/13377221/webp_listing_main_11.webp",
+    "source": "https://uae.yallamotor.com/new-cars/audi/a4/2025",
+    "file": "public/img/audi/interior-negro.webp"
+  },
+  {
+    "vehicle": "mercedes",
+    "color": "beige",
+    "url": "https://jesmb.de/wp-content/uploads/2021/06/mercedes-c-klasse-w206-impressionen_2019-06-11_Image_21C0297-041.jpg",
+    "source": "https://jesmb.de/23415/",
+    "file": "public/img/mercedes/interior-beige-v2.jpg"
+  },
+  {
+    "vehicle": "mercedes",
+    "color": "negro",
+    "url": "https://media.jutarnji.hr/images/slike/2026/03/07/38507774.jpg",
+    "source": "https://www.jutarnji.hr/autoklub/rabljeni/sigurna-kupnja-ili-razlog-za-oprez-kakve-su-tri-posljednje-generacije-mercedesa-c-klase-kao-rabljeni-automobili-15686537",
+    "file": "public/img/mercedes/interior-negro-v2.jpg"
+  },
+  {
+    "vehicle": "mercedes",
+    "color": "marron",
+    "url": "https://gtspirit.com/wp-content/uploads/2021/02/New-W206-C-Class-brown-interior.jpg",
+    "source": "https://gtspirit.com/2021/02/23/2022-mercedes-benz-c-class-launched-4-cylinder-engines-only/",
+    "file": "public/img/mercedes/interior-marron-v2.jpg"
+  },
+  {
+    "vehicle": "toyota",
+    "color": "beige",
+    "url": "https://delivery.via.assetscs.toyota.com/adobe/assets/urn%3Aaaid%3Aaem%3Ae0a499cb-6857-445b-8d42-fe1c712d1a65/as/image.png?fmt=png-alpha%2Crgb%2Cnone&width=1920",
+    "source": "https://www.centennialtoyota.com/vehicle/New/2026/Toyota/Corolla/5YFB4MDE7TP446957/",
+    "file": "public/img/toyota/interior-beige-v2.png"
+  },
+  {
+    "vehicle": "toyota",
+    "color": "gris",
+    "url": "https://delivery.vcr.assetscs.toyota.com/adobe/assets/urn%3Aaaid%3Aaem%3A3d77e11b-0747-4488-a2a9-fc5dd496f7ef/as/image.png?size=1200%2C663",
+    "source": "https://www.centennialtoyota.com/vehicle/New/2026/Toyota/Corolla/5YFB4MDE3TP27D300/",
+    "file": "public/img/toyota/interior-gris-v2.png"
+  },
+  {
+    "vehicle": "toyota",
+    "color": "rojo",
+    "url": "https://es.mikecalverttoyota.com/assets/stock/expanded/transparent/1280/2026toc04_1280/2026toc041989962_1280_12.png?bg-color=FFFFFF&timestamp=0001-01-01T00%3A00%3A00&width=800+800w",
+    "source": "https://es.mikecalverttoyota.com/nuevo-Houston-2026-Toyota-Corolla-XSE-5YFT4MCE8TP275609",
+    "file": "public/img/toyota/interior-rojo-v2.png"
+  }
+]
